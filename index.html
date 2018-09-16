@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<style type="text/css">
+
+#res{
+
+
+	width: 30%
+	display:flex;
+}
+</style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width"/>
+<title>Suma y Resta</title>
+
+
+
+
+<script>
+	
+</script>
+
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+(function() {
+var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+po.src = "basesc/reg-1.005.js";
+var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+<script type="text/javascript">
+(function() {
+var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+po.src = "basesc/oms_calc.js";
+var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+<script type="text/javascript">
+var languag="es2";
+var RResh="Solución:";
+var oms_s_name ="";
+var oms_usr_id ="0";
+var oms_payment_url = "";
+var oms_paymant1 = ' ';
+var oms_paymant2 = ' ';
+var oms_calc_error1 = '<font color=ff0000>¡Error! ¡No se puede dividir por cero!</font>';
+var oms_calc_error2 = '<font color=ff0000>¡Error! ¡Operación inadmisible!</font>';
+var oms_1='';
+var oms_2='1';
+var oms_3;
+var oms_reg1="oms_reg1";
+var oms_reg2="oms_reg2";
+var oms_reg3="oms_reg3";
+var oms_reg4="oms_reg4";
+var oms_reg5="oms_reg5";
+var oms_reg6="oms_reg6";
+var oms_reg7="oms_reg7";
+var oms_reg8="oms_reg8";
+var to_comment="";
+var to_calc="";
+var oms_m=false;
+function oms_full(){
+	var date = new Date();
+	date.setDate( date.getDate() + 60);
+
+}
+</script>
+
+<script>
+(function() {
+var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+po.src = "basesc/afract-1.029.js";
+var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+<script>
+(function() {
+var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+po.src = "basesc/fr-1.027.js";
+var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+<script>
+var j1="¡Error! ¡Ha introducido una expresión incorrecta!";
+var j6="¡Error! ¡Ha olvidado de introducir una expresión!";
+var j7="¡Error! ¡No se puede dividir por cero!";
+var d1='';
+var d2="";
+var d3=" y ";
+var mwidth=0;
+var oms_var_colvo=2;
+
+
+var oms_nextvar;
+var oms_prevvar;
+function oms_next_pole(e,n){
+
+if(e.keyCode==39){
+if(oms_nextvar==1||document.getElementById("oms_c"+n).value.length==0){
+var k=n+1;
+if (k>oms_var_colvo){k=1;}
+document.getElementById("oms_c"+k).focus();
+setCaretPosition(document.getElementById("oms_c"+k), 0);
+}}
+if(e.keyCode==37){
+if(oms_prevvar==1||document.getElementById("oms_c"+n).value.length==0){
+var k=n-1;
+if (k<1){k=oms_var_colvo;}
+document.getElementById("oms_c"+k).focus();
+setCaretPosition(document.getElementById("oms_c"+k), document.getElementById("oms_c"+k).value.length);
+}}}
+function oms_next_pole1(e,n){
+if(e.keyCode==39){
+if(doGetCaretPosition(document.getElementById("oms_c"+n))==document.getElementById("oms_c"+n).value.length){oms_nextvar=1;}
+else{oms_nextvar=0;}
+}
+if(e.keyCode==37){
+if(doGetCaretPosition(document.getElementById("oms_c"+n))==0){oms_prevvar=1;}
+else{oms_prevvar=0;}
+}}
+
+var oms_var_index=1;
+
+function oms_input_select(x,y){
+	//document.getElementById("oms_c"+oms_var_index).className="oms_input_fr";
+	oms_var_index=x;
+	//document.getElementById("oms_c"+oms_var_index).className="oms_input_fr_select";
+	if(!y){
+		scrollToElement("oms_after_solve");
+		//document.getElementById("oms_nabor").focus();
+		//document.getElementById("oms_nabor").blur;
+		document.getElementById("oms_kb").style.display="block";
+	}
+}
+
+
+
+</script>
+</head>
+<body>
+
+
+<script>(function(d, s, id){
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, "script", ""));
+</script>
+
+
+
+
+
+
+
+</div>
+<header>
+
+
+<style type="text/css">
+	
+	#idtable1{
+-webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+		width: 80%;
+	}
+
+
+	h1{
+		color: #FFFFFF;
+background: #0e8dbc;
+text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+	}
+
+
+	#idimabt{
+
+
+	width: 150px;
+	height: 150px;
+}
+.myButton {
+	-moz-box-shadow: -7px 3px 0px 0px #899599;
+	-webkit-box-shadow: -7px 3px 0px 0px #899599;
+	box-shadow: -7px 3px 0px 0px #899599;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+	background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+	background-color:#ededed;
+	-moz-border-radius:19px;
+	-webkit-border-radius:19px;
+	border-radius:19px;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:4px 8px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+	background:-moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+</style>
+
+</header>
+
+
+
+<div id="idtable1"> <h1>Suma y Resta</h1><div id=Ac></div>
+<INPUT id=oms_c1 class=mult tabIndex=1 onkeydown=oms_next_pole1(event,1) onkeyup=oms_next_pole(event,1)>
+	<td class=fr_integer>&nbsp;<select tabIndex=2 id=Op class=crug><option value="+" selected>+</option><option value=->-</option></select>&nbsp;</td>
+	<td class=fr_integer><INPUT id=oms_c2 class=mult tabIndex=3 onkeydown=oms_next_pole1(event,2) onkeyup=oms_next_pole(event,2)>
+<INPUT onclick=Oms_summ_diff_int_decimal(); tabIndex=3 type=button value="  =  " title="Calcular">
+
+<img id="idimabt"
+ src="https://banner2.kisspng.com/20171218/aff/winnie-pooh-png-5a375e0245ad21.0344786615135779862854.jpg" alt="Smiley face" onclick="Oms_summ_diff_int_decimal()">
+
+<table id="idtable" ><tbody>
+<tr>
+	<td ><div ></div></td>
+</tr>
+</tbody></table></div>
+
+
+
+</div><br>
+</div>
+
+</div><br></div>
+<div id="G_r1" style="display:block!important;
+visibility: visible!important;text-align:center;">
+</div></div><div id="res"></div>
+
+
+
+
+<INPUT class ="myButton" onclick=atras(); tabIndex=2 type=button value="Menu" title="¡Convertir">
+
+<script type="text/javascript">
+	
+	function atras(){
+
+		location.href="menu.html";
+	}
+</script>
+
+ 
+
+
+</script>
+</body>
+
+
+
+</html>
